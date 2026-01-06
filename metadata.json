@@ -1,0 +1,13 @@
+{
+    "KPackageStructure": "KWin/Script",
+    "KPlugin": {
+        "Id": "PipAspectRatio",
+        "Name": "PIP Aspect Ratio",
+        "Description": "Maintains aspect ratio when resizing Picture-in-Picture windows",
+        "License": "GPLv3",
+        "Version": "0.1",
+        "EnabledByDefault": false
+    },
+    "X-Plasma-API": "javascript",
+    "X-Plasma-MainScript": "code/main.js"
+}
