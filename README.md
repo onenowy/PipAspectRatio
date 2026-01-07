@@ -1,6 +1,6 @@
 # PipAspectRatio
 
-Maintains aspect ratio when resizing Picture-in-Picture windows.
+Maintains aspect ratio when resizing Picture-in-Picture windows for plasma and kwin.
 
 The "Keep above others" option is enabled by default for PiP windows.
 
