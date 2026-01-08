@@ -42,6 +42,24 @@ workspace.windowAdded.connect(function(client) {
                 finalY = prevY + prevHeight - newHeight;
             }
 
+            var screen = workspace.clientArea(workspace.PlacementArea, client);
+
+            // Clamp to right/bottom boundaries
+            if (finalX + newWidth > screen.x + screen.width) {
+                finalX = screen.x + screen.width - newWidth;
+            }
+            if (finalY + newHeight > screen.y + screen.height) {
+                finalY = screen.y + screen.height - newHeight;
+            }
+
+            // Clamp to left/top boundaries
+            if (finalX < screen.x) {
+                finalX = screen.x;
+            }
+            if (finalY < screen.y) {
+                finalY = screen.y;
+            }
+
             client.frameGeometry = {
                 x: finalX,
                 y: finalY,
