@@ -1,6 +1,6 @@
 # PipAspectRatio
 
-Maintains aspect ratio when resizing Picture-in-Picture windows for KDE Plasma and kWin.
+Maintains aspect ratio when resizing Picture-in-Picture windows for KDE Plasma and KWin.
 
 The "Keep above others" option is enabled by default for PiP windows.
 
